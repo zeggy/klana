@@ -63,17 +63,16 @@
 
     <!-- Template core JavaScript's
     ================================================== -->
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/retina.js"></script>
-    <script src="js/sidebar.js"></script>
-    <script src="js/circle.js"></script>
-    <script src="js/progress.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/parallax.js"></script>
+    <script src="{{asset('js/jquery.min.js') }}"></script>
+    <script src="{{asset('js/jquery-ui.js') }}"></script>
+    <script src="{{asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{asset('js/retina.js') }}"></script>
+    <script src="{{asset('js/sidebar.js') }}"></script>
+    <script src="{{asset('js/circle.js') }}"></script>
+    <script src="{{asset('js/progress.js') }}"></script>
+    <script src="{{asset('js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{asset('js/contact.js') }}"></script>
+    <script src="{{asset('js/parallax.js') }}"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/custom.js"></script>
@@ -84,7 +83,5 @@
     <script src="js/revslider.js"></script>
 
 </body>
-
-<!-- Mirrored from trendingtemplates.com/demos/trips/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2015 23:15:19 GMT -->
 
 </html>
