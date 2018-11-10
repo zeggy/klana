@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/explore', 'HomeController@explore')->name('explore');
+Route::post('/{keywords}', 'TripController@searchTrip')->name('search_trip');
 
 Auth::routes();
 

@@ -18,6 +18,7 @@ class CreateVendorsTable extends Migration
             $table->string('name');
             $table->string('photo');
             $table->float('rating')->unsigned();
+            $table->string('phone');
             $table->timestamps();
         });
     }

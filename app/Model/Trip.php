@@ -10,12 +10,8 @@ use App\Model\Photo;
 class Trip extends Model
 {
     protected $fillable = [
-        'user_id', 'title', 'location', 'price', 'description', 'date', 'estimated_time'
+        'vendor_id', 'title', 'location', 'price', 'description', 'date', 'estimated_time', 'belonging', 'itinerary'
     ];
-
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
 
     public function vendor() {
         return $this->belongsTo(Vendor::class);

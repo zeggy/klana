@@ -8,7 +8,7 @@ use App\Model\Trip;
 class Vendor extends Model
 {
     protected $fillable = [
-        'name', 'photo', 'rating'
+        'name', 'photo', 'rating', 'phone'
     ];
 
     public function trips() {
