@@ -19,7 +19,7 @@
 
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="tab_01">
-                                    <h6>Find Location Open Trip</h6>
+                                    <h6>Find Destination By City</h6>
                                     <form class="bookform form-inline row">
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                             <input type="text" class="form-control" placeholder=" Destination: Jawa Barat, Sumatera ..">
@@ -38,8 +38,7 @@
                     <div class="col-md-7 col-xs-12">
                         <div class="home-message">
                             <h1>LET’S DISCOVER THE<br>WORLD TOGETHER</h1>
-                            <p><strong style="color: white;">KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local. 
-                                    :)</strong></p>
+                            <p><strong style="color: white;">KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local.</strong></p>
                             <a href="#" class="btn btn-primary btn-lg border-radius">READ MORE</a>
                         </div><!-- end homemessage -->
                     </div><!-- end col -->
@@ -337,157 +336,6 @@
             </div><!-- end container -->
         </section><!-- end section -->
 
-        <section class="section section-light clearfix">
-            <div class="container">
-                <div class="top-destinations clearfix">
-                    <div class="hotel-title text-center">
-                        <h3>BEST DESTINATIONS FOR SUMMER</h3>
-                        <p>Template based on deep research on the most popular travel booking websites such as
-                            booking.com, tripadvisor, yahoo<br> travel, expedia, priceline, hotels.com,travelocity,
-                            kayak, orbitz, etc. This guys can’t be wrong.<br> You should definitely give it a shot :)</p>
-                        <hr>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="clearfix">
-                                <div class="post-media clearfix">
-                                    <a href="blog-single.html"><img src="upload/home_desti_02.jpg" alt="" class="img-responsive"></a>
-                                </div><!-- end post-media -->
-
-                                <div class="post-title clearfix">
-                                    <div class="pull-left">
-                                        <h5><a href="blog-single.html">AUSTRALIA</a></h5>
-                                        <h6>990 PLACES</h6>
-                                    </div>
-                                    <div class="pull-right">
-                                        <h5>FROM <span>$490</span></h5>
-                                    </div>
-                                </div><!-- end ost-title -->
-                                <div class="post-content clearfix">
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia, priceline, hotels.com,
-                                        kayak, orbitz, etc. This guys can’t be wrong. You should definitely give it a
-                                        shot :)</p>
-                                </div><!-- end post-content -->
-                            </div><!-- end post-wrapper -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6">
-                            <div class="clearfix">
-                                <div class="post-media clearfix">
-                                    <a href="blog-single.html"><img src="upload/home_desti_01.jpg" alt="" class="img-responsive"></a>
-                                </div><!-- end post-media -->
-
-                                <div class="post-title clearfix">
-                                    <div class="pull-left">
-                                        <h5><a href="blog-single.html">ISTANBUL</a></h5>
-                                        <h6>120 PLACES</h6>
-                                    </div>
-                                    <div class="pull-right">
-                                        <h5>FROM <span>$331</span></h5>
-                                    </div>
-                                </div><!-- end ost-title -->
-                                <div class="post-content clearfix">
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia, priceline, hotels.com,
-                                        kayak, orbitz, etc. This guys can’t be wrong. You should definitely give it a
-                                        shot :)</p>
-                                </div><!-- end post-content -->
-                            </div><!-- end post-wrapper -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end related-hotels -->
-
-                <hr>
-                <br>
-
-                <div class="clearfix">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="clearfix">
-                                <div class="hotel-wrapper">
-                                    <div class="post-media">
-                                        <a href="hotel-single.html"><img src="upload/hotel_01.png" alt="" class="img-responsive"></a>
-                                    </div><!-- end media -->
-                                    <div class="post-title clearfix">
-                                        <div class="pull-left">
-                                            <h5><a href="hotel-single.html" title="">VALLE AURINA</a></h5>
-                                        </div><!-- end left -->
-                                        <div class="pull-right">
-                                            <h6>$500</h6>
-                                        </div><!-- end left -->
-                                    </div><!-- end title -->
-                                    <span class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </span><!-- end rating -->
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia..</p>
-                                </div><!-- end hotel-wrapper -->
-                            </div><!-- end clearfix -->
-                        </div><!-- end col -->
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="clearfix">
-                                <div class="hotel-wrapper">
-                                    <div class="post-media">
-                                        <a href="hotel-single.html"><img src="upload/hotel_02.png" alt="" class="img-responsive"></a>
-                                    </div><!-- end media -->
-                                    <div class="post-title clearfix">
-                                        <div class="pull-left">
-                                            <h5><a href="hotel-single.html" title="">DELUXE HOTEL</a></h5>
-                                        </div><!-- end left -->
-                                        <div class="pull-right">
-                                            <h6>$500</h6>
-                                        </div><!-- end left -->
-                                    </div><!-- end title -->
-                                    <span class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </span><!-- end rating -->
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia..</p>
-                                </div><!-- end hotel-wrapper -->
-                            </div><!-- end clearfix -->
-                        </div><!-- end col -->
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="clearfix">
-                                <div class="hotel-wrapper">
-                                    <div class="post-media">
-                                        <a href="hotel-single.html"><img src="upload/hotel_03.png" alt="" class="img-responsive"></a>
-                                    </div><!-- end media -->
-                                    <div class="post-title clearfix">
-                                        <div class="pull-left">
-                                            <h5><a href="hotel-single.html" title="">5STAR ARGANTINE</a></h5>
-                                        </div><!-- end left -->
-                                        <div class="pull-right">
-                                            <h6>$500</h6>
-                                        </div><!-- end left -->
-                                    </div><!-- end title -->
-                                    <span class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </span><!-- end rating -->
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia..</p>
-                                </div><!-- end hotel-wrapper -->
-                            </div><!-- end clearfix -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div>
-            </div><!-- end container -->
-        </section><!-- end section -->
 
         <section class="section fullscreen background parallax" style="background-image:url('upload/parallax_05.jpg');"
             data-img-width="1921" data-img-height="665" data-diff="20">
@@ -499,112 +347,6 @@
                         This guys can’t be wrong.<br> You should definitely give it a shot :)</p>
                     <a href="#" class="btn btn-primary btn-lg border-radius">READ MORE</a>
                 </div><!-- end homemessage -->
-            </div><!-- end container -->
-        </section><!-- end section -->
-
-        <section class="section clearfix">
-            <div class="container">
-                <div class="popular-destinations clearfix">
-                    <div class="hotel-title">
-                        <h5>NEWS AND UPDATES</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="clearfix">
-                                <div class="post-media clearfix">
-                                    <a href="blog-single.html"><img src="upload/home_blog_05.jpg" alt="" class="img-responsive"></a>
-                                </div><!-- end post-media -->
-
-                                <div class="post-title clearfix">
-                                    <h5><a href="blog-single.html">THAILAND BY TRAIN WITH EASTERN AND ORIENTAL EXPRESS</a></h5>
-                                </div><!-- end ost-title -->
-
-                                <div class="post-meta home-blog-list clearfix">
-                                    <span><i class="icon-attach"></i> 03 Feb 2015</span>
-                                    <span><i class="icon-map110"></i> Asia, Thailand</span>
-                                </div><!-- ne dpost-meta -->
-
-                                <div class="post-content clearfix">
-                                    <p>Template based on deep research on the most popular travel booking websites such
-                                        as booking.com, tripadvisor, yahoo travel, expedia, priceline, hotels.com,
-                                        travelocity, kayak, orbitz, etc. This guys can’t be wrong. You should
-                                        definitely give it a shot :) ed on deep research on the most popular travel
-                                        booking websites such as booking.com, tripadvisor, yahoo travel, expedia.</p>
-                                </div><!-- end post-content -->
-                            </div><!-- end post-wrapper -->
-                        </div><!-- end col -->
-
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="post-media clearfix">
-                                            <a href="blog-single.html"><img src="upload/home_blog_06.jpg" alt="" class="img-responsive"></a>
-                                        </div><!-- end post-media -->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="post-title clearfix">
-                                            <h5><a href="blog-single.html">SANTORINI - GREECE</a></h5>
-                                        </div><!-- end ost-title -->
-
-                                        <div class="post-meta home-blog-list clearfix">
-                                            <span><i class="icon-map110"></i> Greece, Santorina</span>
-                                        </div><!-- ne dpost-meta -->
-
-                                        <div class="post-content clearfix">
-                                            <p>Template based on deep research on the most popular travel booking
-                                                websites such as booking.com, tripadvisor, yahoo travel, expedia</p>
-                                        </div><!-- end post-content -->
-                                    </div><!-- end col -->
-                                </div><!-- end clearfix -->
-
-                                <div class="clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="post-media clearfix">
-                                            <a href="blog-single.html"><img src="upload/home_blog_07.jpg" alt="" class="img-responsive"></a>
-                                        </div><!-- end post-media -->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="post-title clearfix">
-                                            <h5><a href="blog-single.html">YUCATAN - MEXICO..</a></h5>
-                                        </div><!-- end ost-title -->
-
-                                        <div class="post-meta home-blog-list clearfix">
-                                            <span><i class="icon-map110"></i> Amerika, Mexico</span>
-                                        </div><!-- ne dpost-meta -->
-
-                                        <div class="post-content clearfix">
-                                            <p>Template based on deep research on the most popular travel booking
-                                                websites such as booking.com, tripadvisor, yahoo travel, expedia</p>
-                                        </div><!-- end post-content -->
-                                    </div><!-- end col -->
-                                </div><!-- end clearfix -->
-
-                                <div class="clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="post-media clearfix">
-                                            <a href="blog-single.html"><img src="upload/home_blog_08.jpg" alt="" class="img-responsive"></a>
-                                        </div><!-- end post-media -->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="post-title clearfix">
-                                            <h5><a href="blog-single.html">ISTANBUL - TURKEY..</a></h5>
-                                        </div><!-- end ost-title -->
-
-                                        <div class="post-meta home-blog-list clearfix">
-                                            <span><i class="icon-map110"></i> Asia, Turkey</span>
-                                        </div><!-- ne dpost-meta -->
-
-                                        <div class="post-content clearfix">
-                                            <p>Template based on deep research on the most popular travel booking
-                                                websites such as booking.com, tripadvisor, yahoo travel, expedia</p>
-                                        </div><!-- end post-content -->
-                                    </div><!-- end col -->
-                                </div><!-- end clearfix -->
-                            </div><!-- end row -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end related-hotels -->
             </div><!-- end container -->
         </section><!-- end section -->
 
