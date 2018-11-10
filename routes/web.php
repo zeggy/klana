@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/{keywords}', 'TripController@searchTrip')->name('search_trip');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
