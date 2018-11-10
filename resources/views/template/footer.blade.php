@@ -12,11 +12,7 @@
                         <h3>ABOUT</h3>
                     </div><!-- end title -->
                     <div class="textwidget">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est,
-                            impedit incidunt, laboriosam maxime molestias numquam odio officiis, possimus quo
-                            rem. </p>
-                        <p>Ab aut dignissimos ea est, impedit incidunt, laboriosam maxime molestias numquam
-                            odio officiis.</p>
+                        <p>KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local.</p>
                     </div><!-- end textwidget -->
                 </div><!-- end widget -->
             </div><!-- end col -->

@@ -16,4 +16,22 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function home()
+    {
+        return view('home');
+    }
+
+    public function explore() {
+        //$trips = Trip::all();
+        return view ('explore');
+    }
+    public function featured() {
+        //$trips = Trip::all();
+        return view ('trips');
+    }
+    public function resources() {
+        //$trips = Trip::all();
+        return view ('resources');
+    }
 }

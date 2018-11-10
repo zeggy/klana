@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
 
 <head>
@@ -31,14 +28,7 @@
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link href="rs-plugin/css/settings.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
-
 <body>
 
     <div id="loader">
@@ -48,39 +38,7 @@
     </div>
 
     <div id="wrapper">
-
-        <div class="topbar">
-            <div class="container">
-                <div class="pull-left">
-                    <ul class="topbar-drops list-inline">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe"></i>
-                                ENGLISH</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Turkish</a></li>
-                                <li><a href="#">Arabic</a></li>
-                                <li><a href="#">Russian</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">Indonesian</a></li>
-                            </ul>
-                        </li>
-                        <li><i class="icon-telephone5"></i> +62-812-3456-7890</li>
-                    </ul><!-- end list-style -->
-                </div><!-- end left -->
-                <div class="pull-right">
-                    <ul class="topbar-social list-inline">
-                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-pinterest"></i></a></li>
-                        <li><a href="#"><i class="icon-instagrem"></i></a></li>
-                        <li><a href="login.html">LOGIN</a></li>
-                        <li><a href="register.html">REGISTER</a></li>
-                    </ul><!-- end list-style -->
-                </div><!-- end right -->
-            </div>
-        </div>
-        <!-- end topbar -->
-
-        <header class="header fixedheader nobg">
+        <header class="header">
             <div class="menu-container">
                 <div class="container">
                     <div class="menu-wrapper">
@@ -91,12 +49,12 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="icon-menu27"></i>
                                     </button>
-                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/klana.png"
-                                            alt="Klana"></a>
+                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/logo.png"
+                                            alt="Trips"></a>
                                 </div><!-- end navbar-header -->
                                 <div id="navbar-collapse" class="navbar-right navbar-collapse collapse clearfix">
                                     <ul class="nav navbar-nav yamm">
-                                        <li><a href="#" class="active dropdown-toggle" data-toggle="dropdown">HOME</a></li>
+                                        <li><a href="{{route('home')}}" class="active dropdown-toggle" data-toggle="dropdown">HOME</a></li>
                                         <li><a href="{{route('explore')}}">EXPLORE</a></li>
                                         <li><a href="{{route('featured')}}">FEATURED TRIPS</a></li>
                                         <li><a href="{{route('resources')}}">RESOURCES</a></li>
