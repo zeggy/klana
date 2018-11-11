@@ -3,12 +3,12 @@
             data-img-width="1920" data-img-height="1133" data-diff="100">
             <div class="container">
                 <div class="row homeform">
-                    <form action="{{ route('send_email', $trip) }}" method="post">
+                    {{-- <form action="{{ route('send_email', $trip) }}" method="post">
                         {{ csrf_field() }}
                 
                         <input type="text" name="quantity">quantity
                         <input type="submit">Submit
-                    </form>
+                    </form> --}}
                     <div class="col-md-5 col-xs-12">
                         <div class="home-form">
                             <!-- Nav tabs -->
@@ -57,17 +57,17 @@
                 <div class="hotel-title">
                     <h4>Popular Open Trips</h4>
                 </div><!-- end hotel-title -->
-
+                @foreach ($trips as $trip)
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mini-desti row">
                             <div class="col-md-4">
-                                <img src="upload/mini_desti_01.jpg" alt="" class="img-responsive">
+                                <img src="{{ asset('storage/' . $trip->photos[0]->path) }}" alt="" class="img-responsive">
                             </div><!-- end col -->
                             <div class="col-md-8">
                                 <div class="mini-desti-title">
                                     <div class="pull-left">
-                                        <h6>VALLE AURINA</h6>
+                                        <h6>{{ $trip->title }}</h6>
                                         <span class="rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -77,149 +77,7 @@
                                         </span><!-- end rating -->
                                     </div>
                                     <div class="pull-right">
-                                        <h6>$500</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
-                                    </div>
-                                </div><!-- end title -->
-                            </div><!-- end col -->
-                        </div><!-- end mini-desti -->
-
-                        <div class="mini-desti row">
-                            <div class="col-md-4">
-                                <img src="upload/mini_desti_02.jpg" alt="" class="img-responsive">
-                            </div><!-- end col -->
-                            <div class="col-md-8">
-                                <div class="mini-desti-title">
-                                    <div class="pull-left">
-                                        <h6>PRINCIPE FORTE DEI MARMI</h6>
-                                        <span class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span><!-- end rating -->
-                                    </div>
-                                    <div class="pull-right">
-                                        <h6>$500</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
-                                    </div>
-                                </div><!-- end title -->
-                            </div><!-- end col -->
-                        </div><!-- end mini-desti -->
-
-                        <div class="mini-desti row noborder">
-                            <div class="col-md-4">
-                                <img src="upload/mini_desti_03.jpg" alt="" class="img-responsive">
-                            </div><!-- end col -->
-                            <div class="col-md-8">
-                                <div class="mini-desti-title">
-                                    <div class="pull-left">
-                                        <h6>VOGLAUER QUADRO</h6>
-                                        <span class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span><!-- end rating -->
-                                    </div>
-                                    <div class="pull-right">
-                                        <h6>$500</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
-                                    </div>
-                                </div><!-- end title -->
-                            </div><!-- end col -->
-                        </div><!-- end mini-desti -->
-                    </div><!-- end col -->
-
-                    <div class="col-md-6">
-                        <div class="mini-desti row">
-                            <div class="col-md-4">
-                                <img src="upload/mini_desti_04.jpg" alt="" class="img-responsive">
-                            </div><!-- end col -->
-                            <div class="col-md-8">
-                                <div class="mini-desti-title">
-                                    <div class="pull-left">
-                                        <h6>VALLE AURINA</h6>
-                                        <span class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span><!-- end rating -->
-                                    </div>
-                                    <div class="pull-right">
-                                        <h6>$500</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
-                                    </div>
-                                </div><!-- end title -->
-                            </div><!-- end col -->
-                        </div><!-- end mini-desti -->
-
-                        <div class="mini-desti row">
-                            <div class="col-md-4">
-                                <img src="upload/mini_desti_05.jpg" alt="" class="img-responsive">
-                            </div><!-- end col -->
-                            <div class="col-md-8">
-                                <div class="mini-desti-title">
-                                    <div class="pull-left">
-                                        <h6>PRINCIPE FORTE DEI MARMI</h6>
-                                        <span class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span><!-- end rating -->
-                                    </div>
-                                    <div class="pull-right">
-                                        <h6>$500</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
-                                    </div>
-                                </div><!-- end title -->
-                            </div><!-- end col -->
-                        </div><!-- end mini-desti -->
-
-                        <div class="mini-desti row noborder">
-                            <div class="col-md-4">
-                                <img src="upload/mini_desti_06.jpg" alt="" class="img-responsive">
-                            </div><!-- end col -->
-                            <div class="col-md-8">
-                                <div class="mini-desti-title">
-                                    <div class="pull-left">
-                                        <h6>VOGLAUER QUADRO</h6>
-                                        <span class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span><!-- end rating -->
-                                    </div>
-                                    <div class="pull-right">
-                                        <h6>$500</h6>
+                                        <h6>IDR {{ number_format($trip->price) }}</h6>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="mini-desti-desc">
@@ -233,6 +91,7 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </section><!-- end section -->
+        @endforeach
 
         <section class="section fullscreen background parallax" style="background-image:url('images/parallax_03.jpg');"
             data-img-width="1920" data-img-height="586" data-diff="10">

@@ -23,11 +23,6 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function explore() {
-        //$trips = Trip::all_trips();
-        return view ('explore');
-    }
     public function featured() {
         //$trips = Trip::all();
         return view ('trips');

@@ -11,18 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    $trip = App\Model\Trip::find(1);
-    return view('home', compact('trip'));
-});
+Route::get('/', 'TripController@index')->name('trip_index');
+Route::get('/explore', 'TripController@showAllTrips')->name('explore');
+Route::post('/trip', 'TripController@searchTrip')->name('search_trip');
+Route::get('/trip/{trip}', 'TripController@getTripDetail')->name('get_trip_detail');
 
 Route::get('/order_summary', function() {
     return view('emails.orders.order_summary');
 });
-
-
-Route::get('/explore', 'HomeController@explore')->name('explore');
-Route::post('/trip', 'TripController@searchTrip')->name('search_trip');
 
 Route::post('/place_order/{trip}', 'TransactionController@storeTransaction')->name('send_email');
 

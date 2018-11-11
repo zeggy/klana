@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h3>VILLAGE HOTEL KATONG BY FAR EAST HOSPITALITY</h3>
+                        <h3>{{ $trip->title }}</h3>
                         <p>
                             <span class="rating">
                                 <i class="fa fa-star"></i>
@@ -13,7 +13,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </span><!-- end rating -->
-                            25 Marine Parade, Singapore 449536, Singapore (Formerly East Village Hotel)</p>
+                        {{ $trip->location }}</p>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
@@ -27,31 +27,19 @@
                         <!-- START CONTENT -->
                         <div class="single-hotel-wrapper">
                             <div class="single-hotel-image">
-                                <img src="upload/single-hotel.png" alt="" class="img-responsive">
+                                <img src="{{ asset('storage/' . $trip->photos[0]->path) }}" alt="" class="img-responsive">
                                 <div class="price">
                                     <h6>FANTASTIC 8.4</h6>
-                                    <h2><small>$</small>523<span>/NIGHT</span></h2>
-                                    <a href="#" class="btn btn-primary btn-lg">BOOK NOW</a>
+                                    <h2>IDR{{ number_format($trip->price) }}<span>( {{ $trip->estimated_time }} )</span></h2>
+                                    <a href="{{ route('send_email', $trip) }}" class="btn btn-primary btn-lg">BOOK NOW</a>
                                 </div><!-- end price -->
 
                                 <div class="thumbnails">
-                                    <a data-gal="prettyPhoto[product-gallery]" rel="bookmark" title="" href="upload/hotel_01.png"><img
-                                            src="upload/hotel_01.png" alt="" class="img-responsive"></a>
-                                    <a data-gal="prettyPhoto[product-gallery]" rel="bookmark" title="" href="upload/hotel_02.png"><img
-                                            src="upload/hotel_02.png" alt="" class="img-responsive"></a>
-                                    <a data-gal="prettyPhoto[product-gallery]" rel="bookmark" title="" href="upload/hotel_03.png"><img
-                                            src="upload/hotel_03.png" alt="" class="img-responsive"></a>
-                                    <a data-gal="prettyPhoto[product-gallery]" rel="bookmark" title="" href="upload/hotel_04.png"><img
-                                            src="upload/hotel_04.png" alt="" class="img-responsive"></a>
+                                    @for ($i = 1; $i < count($trip->photos); $i++)
+                                <a data-gal="prettyPhoto[product-gallery]" rel="bookmark" title="" href="{{ asset('storage/' . $trip->photos[$i]->path) }}"><img
+                                            src="{{ asset('storage/' . $trip->photos[$i]->path) }}" alt="" class="img-responsive"></a>
+                                    @endfor
                                 </div><!-- end price -->
-
-                                <div class="single-hotel-bottom">
-                                    <p>
-                                        <i class="icon-location38"></i> <strong>Area:</strong> Marina Bay
-                                        <i class="icon-person199"></i> <strong>Rooms:</strong> 2561
-                                        <i class="icon-wifi10"></i> <strong>Free:</strong> Wifi
-                                    </p>
-                                </div><!-- end bottom -->
                             </div><!-- end image -->
 
                             <hr class="hotel-hr">
