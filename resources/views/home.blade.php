@@ -1,9 +1,14 @@
 @include('template/header')
-
         <section class="section fullscreen background parallax" style="background-image:url('images/bromo.png');"
             data-img-width="1920" data-img-height="1133" data-diff="100">
             <div class="container">
                 <div class="row homeform">
+                    <form action="{{ route('send_email', $trip) }}" method="post">
+                        {{ csrf_field() }}
+                
+                        <input type="text" name="quantity">quantity
+                        <input type="submit">Submit
+                    </form>
                     <div class="col-md-5 col-xs-12">
                         <div class="home-form">
                             <!-- Nav tabs -->
@@ -20,9 +25,10 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="tab_01">
                                     <h6>Find Destination By City</h6>
-                                    <form class="bookform form-inline row">
+                                    <form class="bookform form-inline row" action="{{ route('search_trip') }}" method="post">
+                                        {{ csrf_field() }}
                                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" class="form-control" placeholder=" Destination: Jawa Barat, Sumatera ..">
+                                            <input type="text" name="destination" class="form-control" placeholder=" Destination: Jawa Barat, Sumatera ..">
                                         </div>
                                         
                                         <div class="form-group col-md-12 col-sm-6 col-xs-12">

@@ -7,10 +7,9 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-use App\Model\Trip;
-use App\Model\User;
+use App\Model\Transaction;
 
-class OrderShipped extends Mailable
+class OrderSummary extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -33,7 +32,7 @@ class OrderShipped extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.orders.order_shipped')
+        return $this->markdown('emails.orders.order_summary')
                     ->with([
                         'transaction' => $this->transaction
                     ]);

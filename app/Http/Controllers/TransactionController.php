@@ -8,7 +8,7 @@ use App\Model\Trip;
 use App\Model\User;
 use App\Model\Transaction;
 
-use App\Mail\OrderShipped;
+use App\Mail\OrderSummary;
 
 use Carbon\Carbon;
 
@@ -18,11 +18,11 @@ class TransactionController extends Controller
 {
     public function storeTransaction(Request $request, Trip $trip) {
         $user = User::find(1);
-        $vendor = Vendor::find(1);
+        $vendor = $trip->vendor;
 
         $total_amount = $trip->price *  $request->quantity;
 
-        Transaction::create([
+        $transaction = Transaction::create([
             'vendor_id' => $vendor->id,
             'user_id' => $user->id,
             'trip_id' => $trip->id,
@@ -32,7 +32,7 @@ class TransactionController extends Controller
             'transaction_date' => Carbon::now(),
         ]);
 
-        Mail::to($user['email'])->send(OrderShipped($trip));
+        Mail::to($user['email'])->send(new OrderSummary($transaction));
 
         return redirect()->back();
     }

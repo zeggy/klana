@@ -46,9 +46,12 @@ class PhotoSeeder extends Seeder
             ['trip_id' => 8, 'path' => 'trip/8/tanahlot2.jpg'],
 
             ['trip_id' => 9, 'path' => 'trip/9/tanjungputing.jpg'],
-            ['trip_id' => 9, 'path' => 'trip/9/tanjungputing.jpg'],
+            ['trip_id' => 9, 'path' => 'trip/9/tanjungputing1.jpg'],
             ['trip_id' => 9, 'path' => 'trip/9/tanjungputing2.jpg'],
 
+            ['trip_id' => 10, 'path' => 'trip/10/flat06trips.jpg'],
+            ['trip_id' => 10, 'path' => 'trip/10/flat06trips1.jpg'],
+            ['trip_id' => 10, 'path' => 'trip/10/flat06trips2.jpg'],
         ]);
     }
 }

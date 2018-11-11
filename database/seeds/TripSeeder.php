@@ -451,5 +451,17 @@ class TripSeeder extends Seeder
                 takkan terlupakan.', 
                 'date' => '2018-11-16', 'estimated_time' => '3 days 2 nights']
         );
+        DB::table('trips')->insert(
+            ['vendor_id' => 4, 'title' => 'Other Side of Kota Tua', 'location' => 'Kota Tua, DKI Jakarta', 'price' => 750000, 
+                'description' => '
+                Ready for another fun journey on two wheels? Our #OtherSideofKOTATUA is BACK! – Jakarta’s oldest and most colorful neighborhood! Join us for an URBAN ADVENTURE like no other.
+                <br/><br/>
+                Double the Fun with not only one, but two trip leaders! Fun Urban Networking + Sightseeing + Cultural experience - That\'s what we\'re all about.
+                <br/><br/>
+                Saturday, 25 August 2018, 6AM - Lunch
+                Price: Rp. 750k*) per pax - incl. tour + water + snacks + lunch - Bring Your Own Bike
+                *) Rp.150k extra for bike & helmet rental if you need it.', 
+                'date' => '2018-11-16', 'estimated_time' => '1 day']
+        );
     }
 }

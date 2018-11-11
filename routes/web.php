@@ -12,12 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    $trip = App\Model\Trip::find(1);
+    return view('home', compact('trip'));
+});
+
+Route::get('/order_summary', function() {
+    return view('emails.orders.order_summary');
 });
 
 
 Route::get('/explore', 'HomeController@explore')->name('explore');
-Route::post('/{keywords}', 'TripController@searchTrip')->name('search_trip');
+Route::post('/trip', 'TripController@searchTrip')->name('search_trip');
+
+Route::post('/place_order/{trip}', 'TransactionController@storeTransaction')->name('send_email');
 
 Auth::routes();
 

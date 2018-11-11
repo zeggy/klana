@@ -14,7 +14,9 @@ class TripController extends Controller
         return view('trips', compact('trips'));
     }
 
-    public function searchTrip($keywords) {
-        $trips = Trip::where(['location', '%' . $keywords . '%']);
+    public function searchTrip(Request $request) {
+        $trips = Trip::where('location', 'like', '%' . $request->destination)->get();
+
+        return view('explore', compact('trips'));
     }
 }
