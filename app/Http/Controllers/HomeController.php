@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Trip;
+
 class HomeController extends Controller
 {
 
@@ -23,7 +25,7 @@ class HomeController extends Controller
     }
 
     public function explore() {
-        //$trips = Trip::all();
+        //$trips = Trip::all_trips();
         return view ('explore');
     }
     public function featured() {

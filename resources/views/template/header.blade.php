@@ -91,7 +91,7 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="icon-menu27"></i>
                                     </button>
-                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/klana.png"
+                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/white_trans.png"
                                             alt="Klana"></a>
                                 </div><!-- end navbar-header -->
                                 <div id="navbar-collapse" class="navbar-right navbar-collapse collapse clearfix">
