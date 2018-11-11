@@ -24,6 +24,6 @@ Route::post('/place_order/{trip}', 'TransactionController@storeTransaction')->na
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'TripController@index')->name('home');
 Route::get('/featured-trips', 'HomeController@featured')->name('featured');
 Route::get('/resources', 'HomeController@resources')->name('resources');

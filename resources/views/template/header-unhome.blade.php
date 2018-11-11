@@ -13,20 +13,20 @@
     <title>Klana | Authentic Traveling Platform </title>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{asset('images/apple-touch-icon.png') }}" />
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css') }}" rel="stylesheet">
     <!-- Default Styles -->
-    <link href="style.css" rel="stylesheet">
+    <link href="{{asset('style.css') }}" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="{{asset('css/custom.css') }}" rel="stylesheet">
 
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link href="rs-plugin/css/settings.css" rel="stylesheet">
+    <link href="{{asset('rs-plugin/css/settings.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -49,7 +49,7 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="icon-menu27"></i>
                                     </button>
-                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/black_trans.png"
+                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="{{asset('images/black_trans.png') }}"
                                             alt="Trips"></a>
                                 </div><!-- end navbar-header -->
                                 <div id="navbar-collapse" class="navbar-right navbar-collapse collapse clearfix">

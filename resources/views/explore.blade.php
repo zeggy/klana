@@ -8,7 +8,11 @@
                             <li><a href="#">Explore</a></li>
                             <li>Trips</li>
                         </ul>
+                        @if (!$destination)
                         <h3>Explore Our Trips</h3>
+                        @else
+                        <h3>Explore Our Trips in {{ $destination }}</h3>
+                        @endif
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
@@ -19,9 +23,11 @@
         <div class="row">
             <div id="fullwidth" class="col-sm-12">
 
-                @foreach ($trips as $trip)
+                
                 <!-- START CONTENT -->
                 <div class="row">
+
+                    @foreach ($trips as $trip)
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="post-wrapper clearfix border-bottom">
                             <div class="hotel-wrapper">
@@ -33,7 +39,7 @@
                                         <h5><a href="hotel-single.html" title="">{{ $trip->title }}</a></h5>
                                     </div><!-- end left -->
                                     <div class="pull-right">
-                                    <h6>IDR{{ number_format($trip->price) }}</h6>
+                                    <h6>USD {{ number_format($trip->price) }}</h6>
                                     </div><!-- end left -->
                                 </div><!-- end title -->
                                 <span class="rating">
@@ -43,14 +49,14 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>                                    
                                 </span><!-- end rating -->
-                                <p>{{ substr($trip->description, 0, 100) }}...</p>
+                                <p>{{ substr($trip->description, 0, 150) }}...</p>
                             </div><!-- end hotel-wrapper -->
                         </div><!-- end post-wrapper -->
                     </div><!-- end col -->
 
                     @endforeach
 
-                    <nav class="text-center">
+                  <!--   <nav class="text-center">
                         <ul class="pagination">
                             <li>
                                 <a href="#" aria-label="Previous">
@@ -68,7 +74,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
 
 
                 </div><!-- end row -->

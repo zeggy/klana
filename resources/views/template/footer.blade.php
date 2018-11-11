@@ -69,14 +69,13 @@
     <script src="{{asset('js/jquery.prettyPhoto.js') }}"></script>
     <script src="{{asset('js/contact.js') }}"></script>
     <script src="{{asset('js/parallax.js') }}"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/custom.js"></script>
-
+    <script src="{{asset('js/owl.carousel.js') }}"></script>
+    <script src="{{asset('js/bootstrap-select.js') }}"></script>
+    <script src="{{asset('js/custom.js') }}"></script>
     <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/revslider.js"></script>
+    <script src="{{asset('rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{asset('rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script src="{{asset('js/revslider.js') }}"></script>
 
 </body>
 
