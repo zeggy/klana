@@ -43,8 +43,7 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>                                    
                                 </span><!-- end rating -->
-                                <p>Template based on deep research on the most popular travel booking websites
-                                    such as booking.com, tripadvisor, yahoo travel, expedia..</p>
+                                <p>{{ substr($trip->description, 0, 100) }}...</p>
                             </div><!-- end hotel-wrapper -->
                         </div><!-- end post-wrapper -->
                     </div><!-- end col -->
