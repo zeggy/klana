@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illumi1
+use Illuminate\Http\Request;
 
 use App\Model\Trip;
 use App\Model\User;
@@ -27,7 +27,7 @@ class TransactionController extends Controller
             'user_id' => $user->id,
             'trip_id' => $trip->id,
             'amount' => $trip->price,
-            'quantity' => 1,
+            'quantity' => $request->quantity,
             'total_amount' => $total_amount,
             'transaction_date' => Carbon::now(),
         ]);

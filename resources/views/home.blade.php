@@ -3,12 +3,12 @@
             data-img-width="1920" data-img-height="1133" data-diff="100">
             <div class="container">
                 <div class="row homeform">
-                    {{-- <form action="{{ route('send_email', $trip) }}" method="post">
+                    <form action="{{ route('send_email', $trips[0]) }}" method="post">
                         {{ csrf_field() }}
                 
                         <input type="text" name="quantity">quantity
                         <input type="submit">Submit
-                    </form> --}}
+                    </form>
                     <div class="col-md-5 col-xs-12">
                         <div class="home-form">
                             <!-- Nav tabs -->
