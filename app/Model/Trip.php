@@ -5,7 +5,6 @@ namespace App\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-
 use App\Model\User;
 use App\Model\Vendor;
 use App\Model\Photo;
@@ -22,6 +21,12 @@ class Trip extends Model
 
     public function photos() {
         return $this->hasMany(Photo::class);
+    }
+
+    static function all_trips()
+    {
+        $trips = DB::table("trips")->get();
+        return $trips;
     }
 
 }

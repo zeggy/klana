@@ -43,7 +43,7 @@
 
                     <div class="col-md-7 col-xs-12">
                         <div class="home-message">
-                            <h1>TRAVEL THE ETHNIC, <br>LIVING LOCAL</h1>
+                            <h1>LIVE AUTHENTICLY, <br>LIVING WITH LOCAL</h1>
                             <p><strong style="color: white;">KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local.</strong></p>
                             <a href="{{route('explore')}}" class="btn btn-primary btn-lg border-radius">EXPLORE</a>
                         </div><!-- end homemessage -->
@@ -57,9 +57,11 @@
                 <div class="hotel-title">
                     <h4>Popular Open Trips</h4>
                 </div><!-- end hotel-title -->
-                @foreach ($trips as $trip)
+                
                 <div class="row">
-                    <div class="col-md-6">
+                   
+                    @foreach ($trips as $trip)
+                        <a href="{{ route('get_trip_detail', $trip) }}">
                         <div class="mini-desti row">
                             <div class="col-md-4">
                                 <img src="{{ asset('storage/' . $trip->photos[0]->path) }}" alt="" class="img-responsive">
@@ -81,63 +83,22 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="mini-desti-desc">
-                                        <p>Template based on deep research on the most popular travel booking websites
-                                            such as</p>
+                                        <p>{{ substr($trip->description, 0, 250) }}..</p>
                                     </div>
                                 </div><!-- end title -->
                             </div><!-- end col -->
                         </div><!-- end mini-desti -->
-                    </div><!-- end col -->
+                        </a>
+                    @endforeach
+                    <!-- end col -->
                 </div><!-- end row -->
+                
             </div><!-- end container -->
         </section><!-- end section -->
-        @endforeach
-
+        
+   
         <section class="section fullscreen background parallax" style="background-image:url('images/parallax_03.jpg');"
             data-img-width="1920" data-img-height="586" data-diff="10">
-            <div class="container">
-                <div id="testimonials">
-                    <div class="testi-item">
-                        <div class="hotel-title text-center">
-                            <h3>THE TRIPS SAVED MY LIFE!</h3>
-                            <hr>
-                            <p>Template based on deep research on the most popular travel booking websites such as
-                                booking.com, tripadvisor, yahoo<br>
-                                travel, expedia, priceline, hotels.com, travelocity, kayak, orbitz, etc. This guys
-                                can’t be wrong.<br>
-                                You should definitely give it a shot :)</p>
-                            <h6>- DAVID / CEO AGODA -</h6>
-                        </div>
-                    </div><!-- end testi-item -->
-
-                    <div class="testi-item">
-                        <div class="hotel-title text-center">
-                            <h3>THANKS YOU TRIPS! THIS IS AMAZING TRAVEL!</h3>
-                            <hr>
-                            <p>Template based on deep research on the most popular travel booking websites such as
-                                booking.com, tripadvisor, yahoo<br>
-                                travel, expedia, priceline, hotels.com, travelocity, kayak, orbitz, etc. This guys
-                                can’t be wrong.<br>
-                                You should definitely give it a shot :)</p>
-                            <h6>- DAVID / CEO AGODA -</h6>
-                        </div>
-                    </div><!-- end testi-item -->
-                </div><!-- end testimonials -->
-            </div><!-- end container -->
-        </section><!-- end section -->
-
-        <section class="nopadding clearfix">
-            <div class="owl-fullwidth">
-                <div class="owl-item-full">
-                    <img src="upload/home_mini_slider_02.jpg" alt="">
-                </div>
-                <div class="owl-item-full">
-                    <img src="upload/home_mini_slider_01.jpg" alt="">
-                </div>
-            </div><!-- end container -->
-        </section><!-- end section -->
-
-        <section class="section clearfix section-bottom">
             <div class="container">
                 <div class="hotel-title">
                     <h3>WHY HAVE A TRIPS WITH US:</h3>

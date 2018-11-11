@@ -467,9 +467,12 @@ a,
 }
 .post-media {
 	margin-bottom: 20px;
+	height: 250px;
 }
 .post-media img {
 	width: 100%;
+	object-fit: cover;
+	height: 250px;
 }
 .post-media.pull-left img {
 	max-width: 570px;

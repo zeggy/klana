@@ -18,7 +18,9 @@ class TripController extends Controller
     public function showAllTrips() {
         $trips = Trip::all();
 
-        return view('explore', compact('trips'));
+        $destination = '';
+
+        return view('explore', compact('trips', 'destination'));
     }
 
     public function getTripDetail(Trip $trip) {
@@ -26,8 +28,11 @@ class TripController extends Controller
     }
 
     public function searchTrip(Request $request) {
+
         $trips = Trip::where('location', 'like', '%' . $request->destination)->get();
 
-        return view('explore', compact('trips'));
+        $destination = $request->destination;
+
+        return view('explore', compact('trips', 'destination'));
     }
 }
