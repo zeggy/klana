@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-12 text-center">
                 <div class="flogo">
-                    <img src="images/flogo.png" alt="">
+                    <img src="images/white_trans.png" alt="">
                 </div><!-- end logo -->
             </div><!-- end col -->
             <div class="col-md-5 col-sm-6 col-xs-12">

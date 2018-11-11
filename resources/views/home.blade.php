@@ -37,9 +37,9 @@
 
                     <div class="col-md-7 col-xs-12">
                         <div class="home-message">
-                            <h1>LET’S DISCOVER THE<br>WORLD TOGETHER</h1>
+                            <h1>TRAVEL THE ETHNIC, <br>LIVING LOCAL</h1>
                             <p><strong style="color: white;">KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local.</strong></p>
-                            <a href="#" class="btn btn-primary btn-lg border-radius">READ MORE</a>
+                            <a href="{{route('explore')}}" class="btn btn-primary btn-lg border-radius">EXPLORE</a>
                         </div><!-- end homemessage -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -49,7 +49,7 @@
         <section class="section clearfix">
             <div class="container">
                 <div class="hotel-title">
-                    <h4>Open Trip Ter-populer</h4>
+                    <h4>Popular Open Trips</h4>
                 </div><!-- end hotel-title -->
 
                 <div class="row">
@@ -228,7 +228,7 @@
             </div><!-- end container -->
         </section><!-- end section -->
 
-        <section class="section fullscreen background parallax" style="background-image:url('upload/parallax_03.jpg');"
+        <section class="section fullscreen background parallax" style="background-image:url('images/parallax_03.jpg');"
             data-img-width="1920" data-img-height="586" data-diff="10">
             <div class="container">
                 <div id="testimonials">
@@ -275,7 +275,7 @@
         <section class="section clearfix section-bottom">
             <div class="container">
                 <div class="hotel-title">
-                    <h3>OUR SERVICES</h3>
+                    <h3>WHY HAVE A TRIPS WITH US:</h3>
                     <hr class="left">
                 </div><!-- end hotel-title -->
                 <div class="row">
@@ -285,10 +285,8 @@
                                 <i class="icon-hotel16"></i>
                             </div>
                             <div class="col-md-10 col-xs-10 col-sm-10">
-                                <h5>HOTEL ONLINE BOOKING SERVICE</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est,
-                                    impedit incidunt, laboriosam maxime molestias numquam odio officiis. Ab aut
-                                    dignissimos ea est, impedit incidunt.</p>
+                                <h5>AUTHENTICITY</h5>
+                                <p>Co-living with the locals and feel the warmth of their hospitality by booking our trip. Experience the local live like no other.</p>
                             </div>
                         </div><!-- end service -->
 
@@ -297,10 +295,8 @@
                                 <i class="icon-airplane51"></i>
                             </div>
                             <div class="col-md-10 col-xs-10 col-sm-10">
-                                <h5>BOOK CHEAP FLIGHTS ONLINE</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est,
-                                    impedit incidunt, laboriosam maxime molestias numquam odio officiis. Ab aut
-                                    dignissimos ea est, impedit incidunt.</p>
+                                <h5>EMPOWERING COMMUNITY</h5>
+                                <p>Create a positive impact that can improve the locals quality of life.</p>
                             </div>
                         </div><!-- end service -->
 
@@ -309,10 +305,8 @@
                                 <i class="icon-sedan3"></i>
                             </div>
                             <div class="col-md-10 col-xs-10 col-sm-10">
-                                <h5>TAXI CAB BOOKING HOTLINES</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est,
-                                    impedit incidunt, laboriosam maxime molestias numquam odio officiis. Ab aut
-                                    dignissimos ea est, impedit incidunt.</p>
+                                <h5>BILINGUAL ASSISTANCE</h5>
+                                <p>Have a hassle and worry-free local trip with our bilingual English speaking guide.</p>
                             </div>
                         </div><!-- end service -->
 
@@ -321,10 +315,8 @@
                                 <i class="icon-location38"></i>
                             </div>
                             <div class="col-md-10 col-xs-10 col-sm-10">
-                                <h5>TOUR GUIDE & PRIVATE GUIDED TOURS</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est,
-                                    impedit incidunt, laboriosam maxime molestias numquam odio officiis. Ab aut
-                                    dignissimos ea est, impedit incidunt.</p>
+                                <h5>TRANSPARENT PRICE</h5>
+                                <p>No annoying, extra teeny-weeny bits that you need to pay once you get there. It’s an all-inclusive package, baby!</p>
                             </div>
                         </div><!-- end service -->
                     </div><!-- end col -->
@@ -337,15 +329,13 @@
         </section><!-- end section -->
 
 
-        <section class="section fullscreen background parallax" style="background-image:url('upload/parallax_05.jpg');"
+        <section class="section fullscreen background parallax" style="background-image:url('images/parallax_05.jpg');"
             data-img-width="1921" data-img-height="665" data-diff="20">
             <div class="container">
                 <div class="home-message text-center">
-                    <h1>LET’S DISCOVER THE<br>WORLD TOGETHER</h1>
-                    <p>Template based on deep research on the most popular travel booking websites such as booking.com,
-                        tripadvisor, yahoo<br> travel, expedia, priceline, hotels.com, travelocity, kayak, orbitz, etc.
-                        This guys can’t be wrong.<br> You should definitely give it a shot :)</p>
-                    <a href="#" class="btn btn-primary btn-lg border-radius">READ MORE</a>
+                    <h1>LET’S EXPLORE THE LOCAL<br>TOGETHER</h1>
+                    <p>KLANA is for those who want cross things off their bucket list and live an authentic experience. We are an easy to use platform that connects travelers to community-based tourism destinations across indonesia, or as we locals know them: desa wisata. KLANA invites you to live local.</p>
+                    <a href="#" class="btn btn-primary btn-lg border-radius">EXPLORE!</a>
                 </div><!-- end homemessage -->
             </div><!-- end container -->
         </section><!-- end section -->

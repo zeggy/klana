@@ -49,12 +49,12 @@
                                         <span class="sr-only">Toggle navigation</span>
                                         <i class="icon-menu27"></i>
                                     </button>
-                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/logo.png"
+                                    <a id="brand" class="clearfix navbar-brand" href="index.html"><img src="images/black_trans.png"
                                             alt="Trips"></a>
                                 </div><!-- end navbar-header -->
                                 <div id="navbar-collapse" class="navbar-right navbar-collapse collapse clearfix">
                                     <ul class="nav navbar-nav yamm">
-                                        <li><a href="{{route('home')}}" class="active dropdown-toggle" data-toggle="dropdown">HOME</a></li>
+                                        <li><a href="{{route('home')}}" class="active dropdown-toggle">HOME</a></li>
                                         <li><a href="{{route('explore')}}">EXPLORE</a></li>
                                         <li><a href="{{route('featured')}}">FEATURED TRIPS</a></li>
                                         <li><a href="{{route('resources')}}">RESOURCES</a></li>
